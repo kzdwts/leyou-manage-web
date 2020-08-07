@@ -59,6 +59,7 @@
     },
     methods: {
       submit() {
+        alert('点击了提交');
         // 表单校验
         if (this.$refs.myBrandForm.validate()) {
           // 定义一个请求参数对象，通过解构表达式来获取brand中的属性

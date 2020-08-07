@@ -124,8 +124,9 @@
         this.oldBrand = null;
       },
       editBrand(oldBrand){
+        // alert('点击了编辑');
         // 根据品牌信息查询商品分类
-        this.$http.get("/item/category/bid/" + oldBrand.id)
+        this.$http.get("/item/brand/bid/" + oldBrand.id)
           .then(({data}) => {
             // 修改标记
             this.isEdit = true;
